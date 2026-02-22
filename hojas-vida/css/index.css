@@ -1,0 +1,236 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* ========== CONTENEDOR PRINCIPAL ========== */
+.cv-container {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    min-height: 100vh;
+}
+
+/* ========== SIDEBAR (COLUMNA IZQUIERDA) ========== */
+.sidebar {
+    background: linear-gradient(180deg, #3d5a6c 0%, #2c4150 100%);
+    color: white;
+    padding: 40px 30px;
+}
+
+.profile-photo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-photo img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar-section {
+    margin-bottom: 35px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-section:last-child {
+    border-bottom: none;
+}
+
+.sidebar-section h3 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.contacto-item {
+    margin-bottom: 15px;
+}
+
+.contacto-item .icon {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.contacto-item p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.referencia {
+    margin-bottom: 20px;
+}
+
+.referencia h4 {
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.referencia p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 3px;
+}
+
+.sidebar-section a {
+    color: #87CEEB;
+    text-decoration: none;
+    font-size: 14px;
+    word-break: break-word;
+}
+
+.sidebar-section a:hover {
+    text-decoration: underline;
+}
+
+/* ========== CONTENIDO PRINCIPAL (COLUMNA DERECHA) ========== */
+.main-content {
+    padding: 50px 60px;
+}
+
+.main-header {
+    margin-bottom: 40px;
+}
+
+.main-header h1 {
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.main-header h2 {
+    font-size: 16px;
+    color: #7f8c8d;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+/* ========== SECCIONES DE CONTENIDO ========== */
+.content-section {
+    margin-bottom: 40px;
+}
+
+.content-section h3 {
+    font-size: 20px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #3498db;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.content-section p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+}
+
+/* Items (Educación) */
+.item {
+    margin-bottom: 25px;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.item-header h4 {
+    font-size: 18px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.fecha {
+    background-color: #3498db;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.institucion {
+    font-size: 15px;
+    color: #7f8c8d;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.descripcion {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Habilidades */
+.habilidades-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.habilidades-grid div p {
+    padding: 8px 0;
+    font-size: 15px;
+    color: #555;
+    border-bottom: 1px solid #eee;
+}
+
+.habilidades-grid div p:last-child {
+    border-bottom: none;
+}
+
+/* Idiomas */
+.idiomas-simple p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.idiomas-simple strong {
+    color: #2c3e50;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+    .cv-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .sidebar {
+        padding: 30px 20px;
+    }
+    
+    .main-content {
+        padding: 30px 20px;
+    }
+    
+    .habilidades-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}

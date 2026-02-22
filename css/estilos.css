@@ -1,0 +1,499 @@
+/* ========================================
+   RESET Y CONFIGURACIÓN BÁSICA
+   ======================================== */
+
+/* Elimina márgenes y padding por defecto de todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+}
+
+/* Estilos generales del cuerpo de la página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5; /* Fondo gris claro */
+    color: #333; /* Color de texto gris oscuro */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+/* Elimina el subrayado de todos los enlaces */
+a {
+    text-decoration: none;
+    color: inherit; /* Hereda el color del elemento padre */
+}
+
+/* Elimina los puntos de las listas */
+ul {
+    list-style: none;
+}
+
+
+/* ========================================
+   ENCABEZADO (HEADER)
+   ======================================== */
+
+.main-header {
+    background-color: #ffffff; /* Fondo blanco */
+    border-bottom: 3px solid #0066cc; /* Línea azul inferior */
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Contenedor que agrupa los elementos del header */
+.header-container {
+    max-width: 1400px; /* Ancho máximo */
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 0 20px;
+    display: flex; /* Flexbox para alinear elementos */
+    justify-content: space-between; /* Espacia elementos a los extremos */
+    align-items: center; /* Alinea verticalmente al centro */
+}
+
+/* Sección del logo y texto "Campus Virtual" */
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espacio entre logo y texto */
+}
+
+/* Logo de la universidad */
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Hace el logo circular */
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+}
+
+/* Texto "Campus Virtual" */
+.campus-text {
+    font-size: 14px;
+    color: #0f467e; /* Gris medio */
+    font-weight: 600; /* Texto en negrita */
+}
+
+/* Título principal "HOJAS DE VIDA" */
+.course-title {
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+    text-transform: uppercase; /* Convierte a mayúsculas */
+    letter-spacing: 0.5px; /* Espacio entre letras */
+}
+
+/* Contenedor de iconos (notificaciones, mensajes, avatar, etc) */
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio entre iconos */
+    color: #666;
+}
+
+/* Estilos para los iconos individuales */
+.header-icons i {
+    font-size: 20px;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el icono */
+    transition: color 0.3s; /* Transición suave al cambiar color */
+}
+
+/* Cambia color al pasar el mouse sobre los iconos */
+.header-icons i:hover {
+    color: #0066cc; /* Azul al hacer hover */
+}
+
+/* Avatar circular del usuario */
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Circular */
+    object-fit: cover;
+    border: 2px solid #0066cc; /* Borde azul */
+}
+
+
+/* ========================================
+   MENÚ DE NAVEGACIÓN
+   ======================================== */
+
+.main-nav {
+    background-color: #004d99; /* Azul oscuro */
+    padding: 0;
+}
+
+/* Lista del menú de navegación */
+.main-nav ul {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex; /* Coloca los elementos en fila */
+    flex-wrap: wrap; /* Permite que se ajusten en varias líneas si es necesario */
+}
+
+/* Elementos individuales del menú */
+.main-nav li {
+    flex: 0 0 auto; /* No crece ni se encoge */
+}
+
+/* Enlaces del menú */
+.main-nav a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+/* Cambia el fondo al pasar el mouse sobre los enlaces */
+.main-nav a:hover {
+    background-color: #003d7a; /* Azul más oscuro */
+}
+
+
+/* ========================================
+   CONTENIDO PRINCIPAL
+   ======================================== */
+
+.main-content {
+    max-width: 1400px;
+    margin: 0 auto; /* Centra el contenido */
+    padding: 30px 20px;
+}
+
+/* Título de la página "Hojas de Vida de Estudiantes" */
+.page-header {
+    margin-bottom: 30px;
+}
+
+.page-header h2 {
+    font-size: 32px;
+    color: #333;
+    font-weight: 400;
+    text-align: center; /* Centra el texto */
+}
+
+
+/* ========================================
+   SECCIÓN DE BÚSQUEDA
+   ======================================== */
+
+.search-section {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio entre buscador y opciones */
+}
+
+/* Contenedor de la caja de búsqueda */
+.search-container {
+    flex: 0 0 300px; /* Ancho fijo de 300px */
+    display: flex;
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 4px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta contenido que se desborda */
+}
+
+/* Campo de texto para buscar */
+.search-input {
+    flex: 1; /* Ocupa todo el espacio disponible */
+    padding: 10px 15px;
+    border: none;
+    outline: none; /* Elimina el borde azul al hacer clic */
+    font-size: 14px;
+}
+
+/* Botón de búsqueda con lupa */
+.search-button {
+    background-color: #f5f5f5;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #e0e0e0; /* Gris más oscuro al hacer hover */
+}
+
+.search-button i {
+    color: #666; /* Color del icono de lupa */
+}
+
+/* Enlace "Mostrar opciones de búsqueda" */
+.search-options {
+    color: #0066cc; /* Azul */
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.search-options:hover {
+    color: #004d99; /* Azul más oscuro al hacer hover */
+}
+
+
+/* ========================================
+   TARJETAS DE ESTUDIANTES
+   ======================================== */
+
+/* Grid que organiza las tarjetas en columnas */
+.students-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    /* Crea columnas automáticas de mínimo 300px */
+    gap: 30px; /* Espacio entre tarjetas */
+    margin-top: 30px;
+}
+
+/* Cada tarjeta individual de estudiante */
+.student-card {
+    background-color: white;
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 30px;
+    text-align: center; /* Centra todo el contenido */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+}
+
+/* Efecto al pasar el mouse sobre la tarjeta */
+.student-card:hover {
+    transform: translateY(-5px); /* Sube la tarjeta 5px */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+/* Foto del estudiante (circular) */
+.student-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Circular */
+    object-fit: cover; /* Ajusta sin deformar */
+    margin-bottom: 20px;
+    border: 3px solid #f0f0f0; /* Borde gris claro */
+}
+
+/* Nombre del estudiante */
+.student-name {
+    font-size: 20px;
+    color: #333;
+    font-weight: 600; /* Negrita */
+    margin-bottom: 8px;
+}
+
+/* Descripción del rol (Estudiante de...) */
+.student-role {
+    font-size: 14px;
+    color: #666; /* Gris medio */
+    margin-bottom: 20px;
+}
+
+/* Botón "Ver" que lleva a la hoja de vida */
+.btn-ver {
+    display: inline-block;
+    background-color: #0066cc; /* Azul */
+    color: white;
+    padding: 10px 40px;
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-ver:hover {
+    background-color: #004d99; /* Azul más oscuro al hacer hover */
+}
+
+
+/* ========================================
+   ICONOS DE REDES SOCIALES
+   ======================================== */
+
+/* Contenedor de los iconos sociales */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centra los iconos */
+    gap: 15px; /* Espacio entre iconos */
+}
+
+/* Cada icono de red social */
+.social-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Efecto al pasar el mouse sobre los iconos */
+.social-link:hover {
+    transform: scale(1.1); /* Agranda el icono */
+    opacity: 0.8; /* Lo hace ligeramente transparente */
+}
+
+/* Colores específicos de cada red social */
+.social-link.linkedin {
+    background-color: #0077b5; /* Azul de LinkedIn */
+}
+
+.social-link.twitter {
+    background-color: #1da1f2; /* Azul de Twitter */
+}
+
+.social-link.facebook {
+    background-color: #1877f2; /* Azul de Facebook */
+}
+
+
+/* ========================================
+   PIE DE PÁGINA (FOOTER)
+   ======================================== */
+
+.main-footer {
+    background-color: #2c3e50; /* Gris azulado oscuro */
+    color: white;
+    padding: 40px 0 0 0;
+    margin-top: 60px;
+}
+
+/* Contenido principal del footer (3 columnas) */
+.footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px 30px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    /* Crea columnas automáticas de mínimo 250px */
+    gap: 30px;
+}
+
+/* Títulos de cada sección del footer */
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+/* Párrafos del footer */
+.footer-section p {
+    font-size: 14px;
+    color: #bdc3c7; /* Gris claro */
+    margin-bottom: 8px;
+}
+
+/* Contenedor de iconos sociales del footer */
+.footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* Cada icono social del footer */
+.footer-social a {
+    width: 35px;
+    height: 35px;
+    background-color: #34495e; /* Gris azulado */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.footer-social a:hover {
+    background-color: #0066cc; /* Azul al hacer hover */
+}
+
+/* Barra inferior del footer con copyright */
+.footer-bottom {
+    background-color: #1a252f; /* Gris muy oscuro */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #95a5a6; /* Gris claro */
+}
+
+
+/* ========================================
+   DISEÑO RESPONSIVE (ADAPTABLE)
+   ======================================== */
+
+/* Para pantallas medianas (tablets) */
+@media (max-width: 1024px) {
+    .header-container {
+        flex-wrap: wrap; /* Permite que los elementos se ajusten */
+        gap: 15px;
+    }
+    
+    /* Mueve el título a una nueva línea */
+    .course-title {
+        order: 3;
+        flex: 0 0 100%;
+        text-align: center;
+    }
+    
+    /* Reduce el tamaño mínimo de las tarjetas */
+    .students-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+/* Para pantallas pequeñas (móviles grandes) */
+@media (max-width: 768px) {
+    /* El menú se vuelve vertical */
+    .main-nav ul {
+        flex-direction: column;
+    }
+    
+    .main-nav a {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    /* El buscador se vuelve vertical */
+    .search-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .search-container {
+        flex: 0 0 auto;
+        width: 100%; /* Ocupa todo el ancho */
+    }
+    
+    /* Una sola columna de tarjetas */
+    .students-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Iconos del header más pequeños */
+    .header-icons {
+        gap: 10px;
+    }
+    
+    .header-icons i {
+        font-size: 18px;
+    }
+}
+
+/* Para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+    /* Título de página más pequeño */
+    .page-header h2 {
+        font-size: 24px;
+    }
+    
+    /* Menos padding en las tarjetas */
+    .student-card {
+        padding: 20px;
+    }
+    
+    /* Footer en una sola columna */
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}

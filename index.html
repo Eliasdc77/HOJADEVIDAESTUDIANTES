@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración de codificación y responsive -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Hojas de Vida de Estudiantes - Desarrollo Web</title>
+    
+    <!-- Enlace a la hoja de estilos CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <!-- Font Awesome para los iconos (LinkedIn, Facebook, Twitter, etc) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- ========== ENCABEZADO SUPERIOR ========== -->
+    <header class="main-header">
+        <div class="header-container">
+            
+            <!-- Logo y texto "Campus Virtual" -->
+            <div class="logo-section">
+                <img src="imagenes/logounimag.png" alt="Logo Universidad" class="logo">
+                <span class="campus-text">CAMPUS VIRTUAL</span>
+            </div>
+            
+            <!-- Título principal del módulo -->
+            <h1 class="course-title">HOJAS DE VIDA</h1>
+            
+            <!-- Iconos del lado derecho (notificaciones, mensajes, avatar, etc) -->
+            <div class="header-icons">
+                <i class="fas fa-th"></i> <!-- Icono cuadrícula -->
+                <i class="fas fa-envelope"></i> <!-- Icono correo -->
+                <i class="fas fa-comments"></i> <!-- Icono mensajes -->
+                <i class="fas fa-bell"></i> <!-- Icono notificaciones -->
+                
+                <!-- Avatar del usuario con iniciales generadas automáticamente -->
+                <img src="https://ui-avatars.com/api/?name=Moises+Davila&size=40&background=0066cc&color=fff&rounded=true" alt="Moises Davila" class="user-avatar">
+                
+                <i class="fas fa-cog"></i> <!-- Icono configuración -->
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== MENÚ DE NAVEGACIÓN ========== -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#">Contenido</a></li>
+            <li><a href="#">Asignaciones</a></li>
+            <li><a href="#">Foros</a></li>
+            <li><a href="#">Cuestionarios</a></li>
+            <li><a href="#">Progreso de la clase</a></li>
+            <li><a href="#">Valoraciones</a></li>
+            <li><a href="#">Evaluación ▼</a></li>
+            <li><a href="#">Herramientas ▼</a></li>
+        </ul>
+    </nav>
+
+    <!-- ========== CONTENIDO PRINCIPAL ========== -->
+    <main class="main-content">
+        
+        <!-- Título de la página -->
+        <section class="page-header">
+            <h2>Hojas de Vida de Estudiantes</h2>
+        </section>
+
+        <!-- Barra de búsqueda -->
+        <section class="search-section">
+            <div class="search-container">
+                <input type="text" placeholder="Buscar..." class="search-input">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <a href="#" class="search-options">Mostrar opciones de búsqueda</a>
+        </section>
+
+        <!-- ========== TARJETAS DE ESTUDIANTES ========== -->
+        <section class="students-grid">
+            
+            <!-- ESTUDIANTE 1: Moises Davila (con foto real) -->
+            <article class="student-card">
+                <img src="imagenes/foto-perfil.png" alt="Moises Davila" class="student-photo">
+                <h3 class="student-name">Moises Davila</h3>
+                <p class="student-role">Estudiante de Ingeniería de Sistemas</p>
+                
+                <!-- Botón que abre la hoja de vida en nueva pestaña -->
+                <a href="hojas-vida/moises-davila.html" class="btn-ver" target="_blank">Ver</a>
+                
+                <!-- Iconos de redes sociales (opcional) -->
+                <div class="social-icons">
+                    <a href="#" class="social-link linkedin"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link facebook"><i class="fab fa-facebook"></i></a>
+                </div>
+            </article>
+
+            <!-- ESTUDIANTE 2: Ana García (con avatar generado) -->
+            <article class="student-card">
+                <img src="https://ui-avatars.com/api/?name=Ana+Garcia&size=130&background=E24A90&color=fff&rounded=true&bold=true" alt="Ana García" class="student-photo">
+                <h3 class="student-name">Ana García</h3>
+                <p class="student-role">Estudiante de Ingeniería de Sistemas</p>
+                <a href="#" class="btn-ver" target="_blank">Ver</a>
+                
+                <div class="social-icons">
+                    <a href="#" class="social-link linkedin"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link facebook"><i class="fab fa-facebook"></i></a>
+                </div>
+            </article>
+
+            <!-- ESTUDIANTE 3: Carlos Pérez -->
+            <article class="student-card">
+                <img src="https://ui-avatars.com/api/?name=Carlos+Perez&size=130&background=50C878&color=fff&rounded=true&bold=true" alt="Carlos Pérez" class="student-photo">
+                <h3 class="student-name">Carlos Pérez</h3>
+                <p class="student-role">Estudiante de Ingeniería de Sistemas</p>
+                <a href="#" class="btn-ver" target="_blank">Ver</a>
+                
+                <div class="social-icons">
+                    <a href="#" class="social-link linkedin"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link facebook"><i class="fab fa-facebook"></i></a>
+                </div>
+            </article>
+
+            <!-- ESTUDIANTE 4: María López -->
+            <article class="student-card">
+                <img src="https://ui-avatars.com/api/?name=Maria+Lopez&size=130&background=FF6B6B&color=fff&rounded=true&bold=true" alt="María López" class="student-photo">
+                <h3 class="student-name">María López</h3>
+                <p class="student-role">Estudiante de Ingeniería de Sistemas</p>
+                <a href="#" class="btn-ver" target="_blank">Ver</a>
+                
+                <div class="social-icons">
+                    <a href="#" class="social-link linkedin"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link facebook"><i class="fab fa-facebook"></i></a>
+                </div>
+            </article>
+
+            <!-- ESTUDIANTE 5: Juan Martínez -->
+            <article class="student-card">
+                <img src="https://ui-avatars.com/api/?name=Juan+Martinez&size=130&background=9B59B6&color=fff&rounded=true&bold=true" alt="Juan Martínez" class="student-photo">
+                <h3 class="student-name">Juan Martínez</h3>
+                <p class="student-role">Estudiante de Ingeniería de Sistemas</p>
+                <a href="#" class="btn-ver" target="_blank">Ver</a>
+                
+                <div class="social-icons">
+                    <a href="#" class="social-link linkedin"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link facebook"><i class="fab fa-facebook"></i></a>
+                </div>
+            </article>
+
+            <!-- ESTUDIANTE 6: Laura Sánchez -->
+            <article class="student-card">
+                <img src="https://ui-avatars.com/api/?name=Laura+Sanchez&size=130&background=F39C12&color=fff&rounded=true&bold=true" alt="Laura Sánchez" class="student-photo">
+                <h3 class="student-name">Laura Sánchez</h3>
+                <p class="student-role">Estudiante de Ingeniería de Sistemas</p>
+                <a href="#" class="btn-ver" target="_blank">Ver</a>
+                
+                <div class="social-icons">
+                    <a href="#" class="social-link linkedin"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link facebook"><i class="fab fa-facebook"></i></a>
+                </div>
+            </article>
+
+            <!-- Puedes duplicar y modificar las tarjetas para agregar más estudiantes -->
+        </section>
+    </main>
+
+    <!-- ========== PIE DE PÁGINA ========== -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            
+            <!-- Sección 1: Información de la universidad -->
+            <div class="footer-section">
+                <h4>Universidad del Magdalena</h4>
+                <p>Campus Virtual - Plataforma Educativa</p>
+            </div>
+            
+            <!-- Sección 2: Información de contacto -->
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>Email: info@unimagdalena.edu.co</p>
+                <p>Teléfono: (312) 446-7890</p>
+            </div>
+            
+            <!-- Sección 3: Redes sociales -->
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 Universidad del Magdalena. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
